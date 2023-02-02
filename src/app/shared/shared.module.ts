@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MaterialModule} from "./material.module";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -8,7 +10,13 @@ import {MaterialModule} from "./material.module";
   declarations: [],
   imports: [
     CommonModule,
-    MaterialModule
-  ]
+    MaterialModule,
+    FlexLayoutModule,
+  ],
+  exports: [
+    MaterialModule,
+    FlexLayoutModule,
+    RouterModule
+    ]
 })
 export class SharedModule { }

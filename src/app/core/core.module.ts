@@ -6,6 +6,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { LegalNoticeComponent } from './components/legal-notice/legal-notice.component';
 import { CgvComponent } from './components/cgv/cgv.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import {SharedModule} from "../shared/shared.module";
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
 
 
@@ -17,10 +19,16 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     LegalNoticeComponent,
     CgvComponent,
     SidebarComponent,
-    CgvComponent
+    CgvComponent,
+    NavMenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
+  ],
+  exports: [
+    LayoutComponent,
+    HeaderComponent
   ]
 })
 export class CoreModule { }
