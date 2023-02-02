@@ -16,7 +16,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     LayoutComponent,
     LegalNoticeComponent,
     CgvComponent,
-    SidebarComponent
+    SidebarComponent,
+    CgvComponent
   ],
   imports: [
     CommonModule
