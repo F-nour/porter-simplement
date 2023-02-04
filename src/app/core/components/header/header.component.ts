@@ -1,6 +1,4 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Observable} from "rxjs";
-import {Menu} from "../../models/Menu.model";
 import {ThemePalette} from "@angular/material/core";
 
 @Component({
@@ -14,7 +12,6 @@ export class HeaderComponent implements OnInit {
   @Input() color: ThemePalette;
 
 
-
   constructor() {
   }
 
@@ -24,3 +21,4 @@ export class HeaderComponent implements OnInit {
   public onToggleSidenav = () => {
     this.sidenavToggle.emit();
   }
+}

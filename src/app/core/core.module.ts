@@ -32,8 +32,5 @@ import { MenuComponent } from './components/menu/menu.component';
     LayoutComponent,
     HeaderComponent,
   ],
-  imports: [
-    CommonModule
-  ]
 })
 export class CoreModule { }
