@@ -1,9 +1,11 @@
 <mat-sidenav-container class="mat-app-background" fxLayout="column">
   <mat-sidenav class="sidenav" #sidenav role="navigation">
-    <menu fxFill (sidenavClose)="sidenav.close()"></menu>
+    <menu fxFlexFill fxLayout="column" (sidenavClose)="sidenav.close()"></menu>
   </mat-sidenav>
   <mat-sidenav-content>
-    <header-menu (sidenavToggle)="sidenav.toggle()"></header-menu>
+    <header>
+      <header-menu (sidenavToggle)="sidenav.toggle()"></header-menu>
+    </header>
     <main>
       <router-outlet></router-outlet>
     </main>

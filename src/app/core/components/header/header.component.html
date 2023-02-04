@@ -1,17 +1,17 @@
-<mat-toolbar color="primary">
-  <div fxHide.gt-xs>
-    <button mat-icon-button (click)="onToggleSidenav()">
-      <icon-component icon="menu" [visible]="false" description="menu"></icon-component>
-    </button>
-  </div>
-  <nav fxFill fxLayout fxLayoutGap="2rem" fxLayoutAlign="center center">
+<mat-toolbar color="primary" fxLayout fxLayoutAlign="center centerw">
     <div fxHide.gt-xs>
-      <a routerLink="">
-        <image className="logo" file="logo.jpg" [visible]="true" description="Porter, simplement"></image>
-      </a>
+      <button mat-icon-button (click)="onToggleSidenav()">
+        <icon-component icon="menu" [visible]="false" description="menu"></icon-component>
+      </button>
     </div>
-    <div fxHide.xs fxLayoutAlign="start">
-      <nav-menu layout="row" fxFill></nav-menu>
-    </div>
-  </nav>
+    <nav fxFill fxLayout fxLayoutGap="2rem" fxLayoutAlign="center center">
+      <div fxHide.gt-xs>
+        <a routerLink="">
+          <image className="logo" file="logo.jpg" [visible]="true" description="Porter, simplement"></image>
+        </a>
+      </div>
+      <div fxHide.xs fxLayoutAlign="start">
+        <nav-menu layout="row" fxFill></nav-menu>
+      </div>
+    </nav>
 </mat-toolbar>

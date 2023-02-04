@@ -2,34 +2,4 @@
 @use 'style/reseter';
 @use 'style/material';
 @use 'style/accessibility';
-
-/* You can add global styles to this file, and also import other style files */
-
-body, app-root, layout {
-  height: var(--sizeAll);
-  width: var(--sizeAll);
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 1.6rem;
-}
-
-body, a, button, mat-button, mat-input, mat-select, mat-textarea, input, select, textarea {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.mat-app-background {
-  background: rgb(180, 208, 208);
-}
-
-*:not(html, head, meta, title, link, script, style,
-table, tbody, tfoot, thead, tr, td, th,
-label, input, textarea, select, option,
-p, br, hr, blockquote, q, code, span, strong, em,
-h1, h2, h3, h4, h5, h6,
-img, a, li, dd, dt, i,
-li, dd, dt), {
-  display: flex;
-}
+@use 'style/custom';
