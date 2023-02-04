@@ -16,7 +16,6 @@ import {FormationsModule} from "./formations/formations.module";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule,
     CoreModule,
     FormationsModule,
     SharedModule

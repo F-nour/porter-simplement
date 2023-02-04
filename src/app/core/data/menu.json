@@ -2,6 +2,7 @@
   {
     "id": 1,
     "directory": "",
+    "file": "logo.jpg",
     "title": "Porter, Simplement"
   },
   {
@@ -10,7 +11,6 @@
     "title": "Qui suis-je"
   },
   {
-
     "id": 3,
     "directory": "formations",
     "path": [
@@ -45,5 +45,38 @@
     "id": 6,
     "directory": "list",
     "title": "Liste des formateurs"
+  },
+  {
+    "id": 7,
+    "url": "https://www.facebook.com/PorterSimplement/",
+    "file": "facebook.png",
+    "title": "Page Facebook"
+  },
+  {
+    "id": 8,
+    "url": "https://www.instagram.com/portersimplement/",
+    "file": "instagram.png",
+    "title": "Page Instagram"
+  },
+  {
+    "id": 9,
+    "url": "https://maps.google.com/maps/ms?msid=200260122820508492719.0004d680a05bf62f01b48&msa=0",
+    "file": "",
+    "title": "Moniteurs et monitrices Porter Simplement"
+  },
+  {
+    "id": 10,
+    "dialog": "legal",
+    "title": "Mentions légales"
+  },
+  {
+    "id": 11,
+    "dialog": "cgv",
+    "title": "Conditions générales de ventes"
+  },
+  {
+    "id": 12,
+    "dialog": "rules",
+    "title": "Règlement intérieur"
   }
 ]

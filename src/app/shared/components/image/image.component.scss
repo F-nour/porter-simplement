@@ -1,3 +1,12 @@
 .logo {
   height: 3em;
+
+  &--footer {
+    height: 2rem;
+    transition: all 0.3s ease-in-out;
+    &:hover, &:focus, &:active {
+      height:3.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
 }

@@ -6,10 +6,4 @@ import {Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
-
-  @Output() sidenavClose = new EventEmitter();
-
-  public onSidenavClose = () => {
-    this.sidenavClose.emit();
-  }
 }
