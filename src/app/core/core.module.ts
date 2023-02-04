@@ -30,7 +30,10 @@ import { MenuComponent } from './components/menu/menu.component';
   ],
   exports: [
     LayoutComponent,
-    HeaderComponent
+    HeaderComponent,
+  ],
+  imports: [
+    CommonModule
   ]
 })
 export class CoreModule { }
