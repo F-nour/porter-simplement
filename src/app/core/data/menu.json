@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "directory": "",
+    "title": "Porter, Simplement"
+  },
+  {
+    "id": 2,
+    "directory": "about",
+    "title": "Qui suis-je"
+  },
+  {
+
+    "id": 3,
+    "directory": "formations",
+    "path": [
+      "program",
+      "organization",
+      "objectives",
+      "others",
+      "conditions",
+      "subscriptions"
+    ],
+    "title": "Formations",
+    "subtitle": [
+      "Programme de la formation de base",
+      "Organisation de la formation de base",
+      "Objectifs de la formation de base",
+      "Autres formations",
+      "Conditions d'accès aux formations",
+      "Inscription"
+    ]
+  },
+  {
+    "id": 4,
+    "directory": "dates",
+    "title": "Dates"
+  },
+  {
+    "id": 5,
+    "directory": "contact",
+    "title": "Contact"
+  },
+  {
+    "id": 6,
+    "directory": "list",
+    "title": "Liste des formateurs"
+  }
+]

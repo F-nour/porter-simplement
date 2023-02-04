@@ -1,6 +1,6 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav role="navigation">
-    <nav-menu (sidenavClose)="sidenav.close()"></nav-menu>
+<mat-sidenav-container class="mat-app-background" fxLayout="column">
+  <mat-sidenav class="sidenav" #sidenav role="navigation">
+    <menu fxFill (sidenavClose)="sidenav.close()"></menu>
   </mat-sidenav>
   <mat-sidenav-content>
     <header-menu (sidenavToggle)="sidenav.toggle()"></header-menu>

@@ -8,6 +8,7 @@ import { CgvComponent } from './components/cgv/cgv.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {SharedModule} from "../shared/shared.module";
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
@@ -20,7 +21,8 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
     CgvComponent,
     SidebarComponent,
     CgvComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,

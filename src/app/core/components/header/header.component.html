@@ -1,20 +1,17 @@
 <mat-toolbar color="primary">
   <div fxHide.gt-xs>
-      <button mat-icon-button (click)="onToggleSidenav()">
-          <mat-icon>menu</mat-icon>
-      </button>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <icon-component icon="menu" [visible]="false" description="menu"></icon-component>
+    </button>
   </div>
-  <div>
-      <a routerLink="/home">Owner-Account</a>
-  </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
-          <li>
-              <a routerLink="/owner">Owner Actions</a>
-          </li>
-          <li>
-              <a routerLink="/account">Account Actions</a>
-          </li>
-      </ul>
-  </div>
+  <nav fxFill fxLayout fxLayoutGap="2rem" fxLayoutAlign="center center">
+    <div fxHide.gt-xs>
+      <a routerLink="">
+        <image className="logo" file="logo.jpg" [visible]="true" description="Porter, simplement"></image>
+      </a>
+    </div>
+    <div fxHide.xs fxLayoutAlign="start">
+      <nav-menu layout="row" fxFill></nav-menu>
+    </div>
+  </nav>
 </mat-toolbar>
