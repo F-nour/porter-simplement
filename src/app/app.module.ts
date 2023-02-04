@@ -19,6 +19,7 @@ import {FormationsModule} from "./formations/formations.module";
     SharedModule,
     CoreModule,
     FormationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,4 @@
+<div fxFlex fxLayoutAlign="center center">
+  <img [class]="className" src="assets/images/{{ file }}" [alt]="description" [attr.aria-hidden]="hidden">
+  <span [ngClass]="{'sr-only': !visible}">{{ description }}</span>
+</div>
