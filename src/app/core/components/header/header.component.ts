@@ -1,22 +1,10 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'header-menu',
+  selector: 'header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements  OnInit {
-
-  @Output() public sidenavToggle = new EventEmitter();
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
-
-  public onToggleSidenav = () => {
-    this.sidenavToggle.emit();
-  }
+export class HeaderComponent {
 
 }
