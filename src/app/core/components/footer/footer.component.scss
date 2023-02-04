@@ -1,0 +1,15 @@
+.footer-items, .links-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  & span {
+    font-size: 1.2rem;
+  }
+}
+
+button {
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+}

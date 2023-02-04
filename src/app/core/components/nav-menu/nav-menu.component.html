@@ -1,17 +1,16 @@
-<ul [fxLayout]="layout" fxFill fxLayoutGap="2rem" fxLayoutAlign="center, center" class="navigation-items">
+<ul [fxLayout]="layout" fxFill fxLayoutGap="3rem" fxLayoutGap.xs="2rem" fxLayoutAlign="center center" class="navigation-items">
   <ng-container *ngFor="let menuItem of menuItems">
-    <li>
-      <a [routerLink]="menuItem.directory">
+    <li class="navigation-items" *ngIf="menuItem.id < 7" fxLayoutAlign="center center">
+      <a [routerLink]="menuItem.directory" (click)="onSidenavClose()">
         <div *ngIf="menuItem.id === 1">
-        <image *ngIf="!hideLogo"
-                className="logo"
-                file="logo.jpg"
-                [visible]="true"
-                [description]="menuItem.title"></image>
+          <image *ngIf="!hideLogo"
+                  className="logo"
+                  [file]="menuItem.file"
+                  [visible]="true"
+                  [description]="menuItem.title"></image>
           <span *ngIf="hideLogo">Accueil</span>
         </div>
-        <span *ngIf="menuItem.id > 1">{{ menuItem.title}}</span>
-
+        <span *ngIf="1< menuItem.id">{{ menuItem.title }}</span>
       </a>
     </li>
   </ng-container>

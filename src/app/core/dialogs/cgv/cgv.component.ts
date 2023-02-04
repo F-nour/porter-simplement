@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './cgv.component.html',
   styleUrls: ['./cgv.component.scss']
 })
-export class CgvComponent {
+export class CgvDialog {
 
 }

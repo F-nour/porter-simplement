@@ -1,6 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import * as menuData from "../../data/menu.json";
-import {Menu} from "../../models/Menu.model";
+import {Menu} from "../../models/menu.model";
 
 
 @Component({
@@ -10,15 +10,19 @@ import {Menu} from "../../models/Menu.model";
 })
 export class NavMenuComponent implements OnInit {
 
-  @Input() layout!: string;
+  @Input() layout: string = "row";
   @Input() hideLogo: boolean = false
   menuItems: Menu[] = (menuData as any).default
-
+  @Output() sidenavClose = new EventEmitter();
 
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+    public onSidenavClose = () => {
+    this.sidenavClose.emit();
   }
 
 }

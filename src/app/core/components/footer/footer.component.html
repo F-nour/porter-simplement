@@ -1,1 +1,29 @@
-<p>footer works!</p>
+<div [fxLayout]="layout" fxFlexFill fxLayoutAlign="space-between center" fxLayoutGap.xs="2rem">
+  <ul [fxLayout]="layout" fxLayoutGap="2rem" fxLayoutGap.xs="1rem" fxLayoutAlign="center center" class="footer-items">
+    <ng-container *ngFor="let menuItem of menuItems">
+      <li class="footer-items" *ngIf="9<menuItem.id">
+        <button (click)="openDialog(menuItem.dialog)">
+          <image *ngIf="menuItem.file !== undefined"
+                  className="logo"
+                  [file]="menuItem.file"
+                  [visible]="true"
+                  [description]="menuItem.title"></image>
+          <span *ngIf="menuItem.file === undefined">{{ menuItem.title }}</span>
+        </button>
+      </li>
+    </ng-container>
+  </ul>
+  <ul fxLayout fxLayoutGap="2rem" fxLayoutAlign="flex-end center" class="links-items">
+    <ng-container *ngFor="let menuItem of menuItems">
+      <li class="links-items" *ngIf="menuItem.id >= 7 && menuItem.id < 9">
+        <a [href]="menuItem.url" target="_blank">
+          <image *ngIf="menuItem.file !== ''"
+                  className="logo--footer"
+                  [file]="menuItem.file"
+                  [visible]="false"
+                  [description]="menuItem.title"></image>
+        </a>
+      </li>
+    </ng-container>
+  </ul>
+</div>

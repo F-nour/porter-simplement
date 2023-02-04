@@ -2,12 +2,19 @@
   <mat-sidenav class="sidenav" #sidenav role="navigation">
     <menu fxFlexFill fxLayout="column" (sidenavClose)="sidenav.close()"></menu>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content fxFlexFill fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="2rem">
     <header>
-      <header-menu (sidenavToggle)="sidenav.toggle()"></header-menu>
+      <mat-toolbar color="primary" fxLayout fxLayoutAlign="center centerw">
+        <header-menu (sidenavToggle)="sidenav.toggle()"></header-menu>
+      </mat-toolbar>
     </header>
     <main>
       <router-outlet></router-outlet>
     </main>
+    <footer>
+      <mat-toolbar fxHide.xs color="primary" layout>
+        <footer-menu fxFill fxLayout></footer-menu>
+      </mat-toolbar>
+    </footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
