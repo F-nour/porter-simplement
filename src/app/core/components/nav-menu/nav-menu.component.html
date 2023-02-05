@@ -1,7 +1,7 @@
 <ul [fxLayout]="layout" fxFill fxLayoutGap="3rem" fxLayoutGap.xs="2rem" fxLayoutAlign="center center" class="navigation-items">
   <ng-container *ngFor="let menuItem of menuItems">
     <li class="navigation-items" *ngIf="menuItem.id < 7" fxLayoutAlign="center center">
-      <a [routerLink]="menuItem.directory" (click)="onSidenavClose()">
+      <a [routerLink]="menuItem.directory">
         <div *ngIf="menuItem.id === 1">
           <image *ngIf="!hideLogo"
                   className="logo"

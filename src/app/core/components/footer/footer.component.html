@@ -2,7 +2,7 @@
   <ul [fxLayout]="layout" fxLayoutGap="2rem" fxLayoutGap.xs="1rem" fxLayoutAlign="center center" class="footer-items">
     <ng-container *ngFor="let menuItem of menuItems">
       <li class="footer-items" *ngIf="9<menuItem.id">
-        <button (click)="openDialog(menuItem.dialog)">
+        <button mat-button (click)="openDialog(menuItem.dialog)">
           <image *ngIf="menuItem.file !== undefined"
                   className="logo"
                   [file]="menuItem.file"

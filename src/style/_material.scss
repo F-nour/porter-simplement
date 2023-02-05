@@ -43,10 +43,15 @@ $porter-simplement-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($porter-simplement-theme);
 
-material-container, .mat-app-background {
+mat-dialog-container, .mat-app-background, .modal, .mat-mdc-dialog-container {
   background-color: $porter-simplement-background;
+  --mdc-dialog-container-color:  $porter-simplement-background;
 }
 
 body, a, span, button, mat-button, mat-input, mat-select, mat-textarea, input, select, textarea {
   color: $porter-simplement-foreground;
+}
+
+.mat-dialog-container {
+  overflow: hidden;
 }

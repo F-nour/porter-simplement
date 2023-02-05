@@ -1,4 +1,4 @@
 <mat-nav-list fxFill fxLayout="column" fxLayoutAlign="space-between center">
-  <nav-menu layout="column" fxLayoutAlign="flex-start" [hideLogo]="true"></nav-menu>
-  <footer-menu layout="column" fxLayoutAlign="flex-end"></footer-menu>
+  <nav-menu layout="column" fxLayoutAlign="flex-start" [hideLogo]="true" (click)="onSidenavClose()"></nav-menu>
+  <footer-menu layout="column" fxLayoutAlign="flex-end" (click)="onSidenavClose()"  ></footer-menu>
 </mat-nav-list>

@@ -29,7 +29,6 @@ import {ModalComponent} from "./components/modal/modal.component";
     ImageComponent,
     ModalComponent
   ],
-
 })
 export class SharedModule {
 }

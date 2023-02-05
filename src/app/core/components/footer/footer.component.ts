@@ -4,7 +4,7 @@ import {Menu} from "../../models/menu.model";
 import {CgvDialog} from "../../dialogs/cgv/cgv.component";
 import {LegalNoticeDialog} from "../../dialogs/legal-notice/legal-notice.component";
 import {RulesProcedureDialog} from "../../dialogs/rules-procedure/rules-procedure.component";
-import {MatDialog} from '@angular/material/dialog';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 
 @Component({
@@ -16,6 +16,7 @@ export class FooterComponent implements OnInit {
 
   menuItems: Menu[] = (menuData as any).default
   @Input() layout: string = "row";
+  dialogRef!: MatDialogRef<any>
 
   constructor(private dialog: MatDialog) {
   }
@@ -24,7 +25,7 @@ export class FooterComponent implements OnInit {
   }
 
 
-  openDialog(dialog: string) {
+  openDialog(dialog: string | null) {
     let modal = null
     switch (dialog) {
       case "legal":
@@ -37,6 +38,9 @@ export class FooterComponent implements OnInit {
         modal = RulesProcedureDialog;
         break;
     }
-    if (modal !== null) this.dialog.open(modal);
+    if (modal !== null) {
+      this.dialogRef = this.dialog.open(LegalNoticeDialog);
+    }
   }
 }
+
