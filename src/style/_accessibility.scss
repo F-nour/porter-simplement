@@ -59,7 +59,8 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+icon-component, mat-icon{
   color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   text-decoration: none;

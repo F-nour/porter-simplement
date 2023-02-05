@@ -22,6 +22,7 @@ $porter-simplement-background: rgb(180, 208, 208);
 $porter-simplement-foreground: rgba(0, 0, 0, 0.5);
 
 
+
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $porter-simplement-theme: mat.define-light-theme((
@@ -33,13 +34,19 @@ $porter-simplement-theme: mat.define-light-theme((
                 background: $porter-simplement-background,
                 foreground: $porter-simplement-foreground,
         ),
-        )
+)
 );
-
-
 
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($porter-simplement-theme);
+
+material-container, .mat-app-background {
+  background-color: $porter-simplement-background;
+}
+
+body, a, span, button, mat-button, mat-input, mat-select, mat-textarea, input, select, textarea {
+  color: $porter-simplement-foreground;
+}

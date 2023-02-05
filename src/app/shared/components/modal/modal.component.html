@@ -1,0 +1,14 @@
+<mat-dialog-container fxLayoutGap="2rem" fxLayoutAlign="space-around center">
+  <mat-dialog-actions class="close" fxLayoutAlign="end">
+    <button mat-icon-button (click)="closeDialog()">
+      <icon-component description="Fermer" icon="close"></icon-component>
+    </button>
+  </mat-dialog-actions>
+  <div class="title-container" fxFlexFill fxLayout="column">
+    <h1 mat-dialog-title fxLayoutAlign="center center">{{ title }}</h1>
+    <h2 *ngIf="subtitle !== null"mat-dialog-title fxLayoutAlign="center center">{{ subtitle }}</h2>
+  </div>
+  <mat-dialog-content fxFill fxLayoutGap="1rem">
+    <ng-content></ng-content>
+  </mat-dialog-content>
+</mat-dialog-container>

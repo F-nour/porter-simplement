@@ -6,12 +6,14 @@ import {RouterModule} from "@angular/router";
 import {IconComponent} from "./components/icon/icon.component";
 import {ImageComponent} from "./components/image/image.component";
 import {HttpClientModule} from "@angular/common/http";
+import {ModalComponent} from "./components/modal/modal.component";
 
 
 @NgModule({
   declarations: [
     IconComponent,
-    ImageComponent
+    ImageComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import {HttpClientModule} from "@angular/common/http";
     RouterModule,
     HttpClientModule,
     IconComponent,
-    ImageComponent
+    ImageComponent,
+    ModalComponent
   ],
 
 })

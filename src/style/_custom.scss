@@ -9,14 +9,6 @@ body {
   font-size: 1.6rem;
 }
 
-body, a, span, button, mat-button, mat-input, mat-select, mat-textarea, input, select, textarea {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.mat-app-background {
-  background: rgb(180, 208, 208);
-}
-
 *:not(html, head, meta, title, link, script, style,
 table, tbody, tfoot, thead, tr, td, th,
 label, input, textarea, select, option,
