@@ -21,7 +21,7 @@ export class NavMenuComponent implements OnInit {
   ngOnInit() {
   }
 
-    public onSidenavClose = () => {
+  public onSidenavClose = () => {
     this.sidenavClose.emit();
   }
 

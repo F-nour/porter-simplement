@@ -18,6 +18,9 @@ $porter-simplement-secondary: mat.define-palette(mat.$teal-palette, A200, A100, 
 // The warn palette is optional (defaults to red).
 $porter-simplement-warn: mat.define-palette(mat.$orange-palette);
 $porter-simplement-danger: mat.define-palette(mat.$pink-palette);
+$porter-simplement-background: rgb(180, 208, 208);
+$porter-simplement-foreground: rgba(0, 0, 0, 0.5);
+
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
@@ -27,8 +30,13 @@ $porter-simplement-theme: mat.define-light-theme((
                 accent: $porter-simplement-secondary,
                 warn: $porter-simplement-warn,
                 danger: $porter-simplement-danger,
+                background: $porter-simplement-background,
+                foreground: $porter-simplement-foreground,
+        ),
         )
-));
+);
+
+
 
 
 // Include theme styles for core and each component used in your app.
